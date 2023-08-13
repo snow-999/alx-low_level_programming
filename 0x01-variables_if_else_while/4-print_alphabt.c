@@ -2,7 +2,7 @@
 /*
  * main - Entry point
  *
- * Description: print some alphabet
+ * Description: Write a program that prints the alphabet in lowercase
  *
  * Return: always 0
 */
