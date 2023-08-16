@@ -1,8 +1,9 @@
 #include "main.h"
-/*
+/**
  * add - Add two numbers
- * @n: task number
- * @m: task number
+ * Description: sub numbers
+ * @n: Task number
+ * @m: Task number
  * Return: sun
 */
 int add(int n, int m)
