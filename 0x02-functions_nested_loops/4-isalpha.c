@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * _isalpha - entery point
+ * _isalpha - print alphabet
  *
  * Description: check the letters
+ *
+ * @c: Task number
  *
  * Return: always 0
  *
