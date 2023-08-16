@@ -1,9 +1,8 @@
 #include "main.h"
 /*
- * Add - add numbers
- *
- * Description: sumstracte numbers
- *
+ * add - Add two numbers
+ * @n: task number
+ * @m: task number
  * Return: sun
 */
 int add(int n, int m)

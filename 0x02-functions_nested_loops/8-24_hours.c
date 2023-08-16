@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * Jack_bauer - entery point
+ * jack_bauer - entery point
  *
  * Description: print time
 */

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * Times_table - entry point
+ * times_table - entry point
  *
  * Description: print numbers
 */
@@ -12,7 +12,7 @@ void times_table(void)
 	for (l = 0; l <= 9; l++)
 	{
 		_putchar(48);
-		for (n = 1; n <= 9; n++)
+		for (n = 0; n <= 9; n++)
 		{
 			_putchar(',');
 			_putchar(' ');

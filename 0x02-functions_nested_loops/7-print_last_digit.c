@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * Print_last_digit - entry point
+ * print_last_digit - entry point
  *
- * @n: task number
+ * @n: Task number
  *
  * Return: lastdigit
 */
