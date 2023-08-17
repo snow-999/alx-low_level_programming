@@ -1,5 +1,12 @@
 #include "main.h"
-/***/
+/**
+ * more_numbers - print more numbers 
+ *
+ * Description: print numbers
+ *
+ * Return: null
+ *
+*/
 void more_numbers(void)
 {
 	int r, n, c;
