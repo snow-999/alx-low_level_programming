@@ -2,11 +2,20 @@
 /***/
 void print_diagonal(int n)
 {
-	int r;
+	int r, p;
 
-	for (r = 0; r < n; r++)
+	if (n <= 0)
 	{
-		_putchar(\);
+		_putchar('\n');
 	}
-	_putchar('\n');
+		for (r = 0; r < n; r++)
+		{
+			for (p = 0; p < r; p++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
+	
 }
