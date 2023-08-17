@@ -1,5 +1,12 @@
 #include "main.h"
-/***/
+/**
+ * print_diagonal - print \
+ *
+ * @n: Task number
+ *
+ * Return: null
+ *
+*/
 void print_diagonal(int n)
 {
 	int r, p;
@@ -17,5 +24,5 @@ void print_diagonal(int n)
 			_putchar('\\');
 			_putchar('\n');
 		}
-	
+
 }
