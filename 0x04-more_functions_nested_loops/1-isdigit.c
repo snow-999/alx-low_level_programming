@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - check for digit
+ * _isdigit - Check for digit
  * @c: Task number
  * Return: always 0
  *
