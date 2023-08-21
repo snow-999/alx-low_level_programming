@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-/***/
+/**
+ * print_array - entry point
+ * @a: Task array
+ * @n: Task number
+ * Return: null
+ *
+*/
 void print_array(int *a, int n)
 {
 	int i;
@@ -11,7 +17,7 @@ void print_array(int *a, int n)
 		{
 		printf("%d, ", a[i]);
 		}
-		else 
+		else
 		{
 		printf("%d", a[i]);
 		}
