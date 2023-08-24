@@ -1,39 +1,50 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * cap_string - entry point
  * @str: task string
  * Return: str
  *
 */
-char *cap_string(char *str)
+int islower(int c)
 {
-	int i = 0;
+	return (c >= 97 && c <= 122);
+}
+int isdelimiter(char c)
+{
+	int i;
+	char d[] = " \t\n,.!?\"(){}";
 
-	while (str[i])
+	for (i = 0; i < 12; i++)
 	{
-		i++;
+		if (c == d[i])
+		{
+		return (1);
+		}
 	}
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
+	return (0);
+}
+char *cap_string(char *s)
+{
+	char *ptr = s;
+	int fd = 1;
+
+	while (*s)
+	{
+		if (isdelimiter(*s))
 		{
-		i++;
-		if (str[i - 1] == ' ' ||
-		str[i - 1] == '\t' ||
-		str[i - 1] == '\n' ||
-		str[i - 1] == ',' ||
-		str[i - 1] == ';' ||
-		str[i - 1] == '.' ||
-		str[i - 1] == '!' ||
-		str[i - 1] == '?' ||
-		str[i - 1] == '"' ||
-		str[i - 1] == '(' ||
-		str[i - 1] == ')' ||
-		str[i - 1] == '{' ||
-		str[i - 1] == '}' ||
-		i == 0)
+		fd = 1;
+		}
+		else if (islower(*s) && fd)
 		{
-		str[i] -= 32;
-		i++;
+			*s -= 32;
+			fd = 0;
 		}
+		else
+		{
+		fd = 0;
 		}
-	return (str);
+	}
+		s++;
+		return (ptr);
 }
