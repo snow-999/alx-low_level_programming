@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
-/***/
+/**
+ * print_diagsums - sum matrix
+ * @a: task array
+ * @size: size of array
+ * Return: null
+*/
 void print_diagsums(int *a, int size)
 {
 	int i;
