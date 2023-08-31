@@ -1,5 +1,10 @@
 #include "main.h"
-/***/
+/**
+ * is_prime_number - main
+ * @n: task number
+ * @x: task number
+ * Return: check(n, 2)
+*/
 int check(int x, int n);
 int is_prime_number(int n)
 {
@@ -7,8 +12,15 @@ int is_prime_number(int n)
 	{
 	return (0);
 	}
- return (check(n, 2));
+return (check(n, 2));
 }
+/**
+ * check - check prime numbers
+ * @x: task number
+ * @n: task number
+ * Return: check(n, x + 1)
+*/
+
 int check(int x, int n)
 {
 	if (x == 1)
