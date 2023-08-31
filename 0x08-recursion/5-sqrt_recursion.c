@@ -29,9 +29,9 @@ int check(int x, int n)
 	{
 	return (x);
 	}
-	if (x * x > n)
+	if (x * x < n)
 	{
-	return (-1);
+		return (check(n, x + 1));
 	}
-	return (check(n, x + 1));
+	return (-1);
 }
