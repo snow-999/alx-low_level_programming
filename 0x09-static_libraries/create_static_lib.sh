@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc -c *.c
-ar rc libball.a *.o
+gcc -Wall -Wextra -Werror -pedantic -c *.c
+ar -rc libball.a *.o
+ranlib libbal.a
