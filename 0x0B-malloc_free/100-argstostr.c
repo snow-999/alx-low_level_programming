@@ -24,16 +24,16 @@ int _size(char *c)
 */
 char *argstostr(int ac, char **av)
 {
-	int i, k, al, l;
+	int i = 0, k = 0, al = 0, l = 0;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
 	{
 	return (NULL);
 	}
-	for (i = 0; i < ac; i++, al++)
+	for (; i < ac; i++, al++)
 	{
-	al += _size(av[i]);
+	al = al + _size(av[i]);
 	}
 	ptr = malloc(sizeof(char) * al + 1);
 	if (ptr == 0)
