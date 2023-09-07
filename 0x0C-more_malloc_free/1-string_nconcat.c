@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
-/***/
+/**
+ * _size - get the length of string
+ * @c: string
+ * Return: s
+*/
 int _size(char *c)
 {
 	int s;
@@ -11,6 +15,15 @@ int _size(char *c)
 	}
 	return (s);
 }
+/**
+ * string_nconcat - conecste two string
+ * @s1: string
+ * @s2: string
+ * @n: number
+ * Return: ptr
+ *
+*/
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, k, size1;
@@ -41,5 +54,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	ptr[i] = '\0';
 	return (ptr);
-	
 }
