@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * size - find string size
+ * _size - find string size
  * @c: string
+ * Description: Get the size of string
  * Return: s
 */
 int _size(char *c)
 {
 	int s = 0;
-	
+
 	for (; c[s] != '\0'; s++)
 	{
 	;
@@ -17,9 +18,10 @@ int _size(char *c)
 	return (s);
 }
 /**
- * strcpy - copy string value
- * @first: first string
- * @second: second string
+ * _strcpy - copy string value
+ * @dest: first string
+ * @src: second string
+ * Description: Copy the string
  * Return: first
 */
 char *_strcpy(char *dest, char *src)
@@ -48,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 	return (NULL);
 	}
-	dog =(dog_t *)  malloc(sizeof(dog_t));
+	dog = (dog_t *)  malloc(sizeof(dog_t));
 	if (dog == NULL)
 	{
 	return (NULL);
