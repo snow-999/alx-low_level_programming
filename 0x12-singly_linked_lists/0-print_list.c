@@ -1,5 +1,10 @@
 #include "lists.h"
-/***/
+/**
+ * print_list - print the list string
+ * @h: list
+ * Return: c
+ *
+*/
 size_t print_list(const list_t *h)
 {
 	int c = 0;
