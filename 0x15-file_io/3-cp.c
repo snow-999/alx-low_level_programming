@@ -23,33 +23,33 @@ int main(int ac, char **av)
 	from_fop = open(av[1], O_RDONLY);
 	if (from_fop == -1)
 	{
-		dprintf(STDERR_FILNO, ERR_NOREAD, av[1]), exit(98);
+		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 	}
 	to_fop = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERM);
 	if (to_fop == -1)
 	{
-		dprintf(STDERR_FILNO, ERR_NOWRITE, av[2]), exit(99);
+		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	}
-	while ((b = read(from_fop, buf, buf_size)) > 0)
+	while ((x = read(from_fop, buf, buf_size)) > 0)
 	{
-		if (write(to_fop, buf, b) != b)
+		if (write(to_fop, buf, x) != x)
 		{
-		dprintf(STDERR_FILNO, ERR_NOWRITE, av[2]), exit(99);
+		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 		}
 	}
-	if (b == -1)
+	if (x == -1)
 	{
-		dprintf(STDERR_FILNO, ERR_NOREAD, av[1]), exit(98);
+		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 	}
 	from_fop = close(from_fop);
-	to_fop = close(fop);
+	to_fop = close(to_fop);
 	if (from_fop)
 	{
-		dprintf(STDERR_FILNO, ERR_NOCLOSE, from_fop) exit(100);
+		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fop), exit(100);
 	}
 	if (to_fop)
 	{
-		dprintf(STDERR_FILNO, ERR_NOCLOSE, from_fop) exit(100);
+		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fop), exit(100);
 	}
 	return (EXIT_SUCCESS);
 
