@@ -8,6 +8,10 @@ int length(char *s)
 {
 	int x = 0;
 
+	if (s == NULL)
+	{
+	return (0);
+	}
 	while (*s++)
 	{
 	x++;
